@@ -67,26 +67,38 @@ button {
 .header__logo img {
   width: 60px;
   height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (width <= 727px) {
   .header__logo img {
-    width: 60px;
-    height: 30px;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
 @media (width >= 728px) {
   .header__logo img {
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
 @media (width >= 1024px) {
   .header__logo img {
-    width: 130px;
-    height: 70px;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: -20px;
   }
 }
 
@@ -483,6 +495,10 @@ button {
     padding: 0 15px;
   }
 
+  .header {
+    background-image: url("pic-4.6ad37cd2.webp");
+  }
+
   .header__logo {
     width: 359px;
     height: 302px;
@@ -523,8 +539,8 @@ button {
     padding: 0 15px;
   }
 
-  .header__country {
-    display: none;
+  .header {
+    background-image: url("pic-3.946eeac0.webp");
   }
 
   .header__headline {
@@ -532,7 +548,9 @@ button {
   }
 
   .header__controls {
+    flex-direction: column;
     max-width: 100%;
+    display: flex;
   }
 
   .events-grid, .skeleton-grid {
