@@ -1,5 +1,6 @@
 import { fetchEvents, fetchEventById, fetchEventsByAttraction } from "./api.js";
 import { renderCards, renderModal, setSkeleton, setEmptyState } from "./ui.js";
+import { initScrollTop } from "./scrollTop.js";
 
 const state = {
   keyword: "",
@@ -158,3 +159,4 @@ document.addEventListener("keydown", (e) => {
 });
 
 loadEvents(false);
+initScrollTop();

@@ -583,4 +583,44 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/*# sourceMappingURL=event-booster.34df27b5.css.map */
+
+.scroll-top {
+  background: var(--color-surface);
+  border: none;
+  border: 1px solid var(--color-border);
+  width: 44px;
+  height: 44px;
+  color: var(--color-text);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 5;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: opacity .2s, transform .2s, background .2s;
+  display: flex;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  transform: translateY(10px);
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  background: var(--color-border);
+}
+
+@media (width <= 480px) {
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+/*# sourceMappingURL=EVENT-BOOSTER.34df27b5.css.map */

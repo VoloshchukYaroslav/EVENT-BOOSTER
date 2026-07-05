@@ -716,6 +716,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 },{}],"lhpGb":[function(require,module,exports,__globalThis) {
 var _apiJs = require("./api.js");
 var _uiJs = require("./ui.js");
+var _scrollTopJs = require("./scrollTop.js");
 const state = {
     keyword: "",
     countryCode: "",
@@ -837,8 +838,9 @@ document.addEventListener("keydown", (e)=>{
     if (e.key === "Escape") closeModal();
 });
 loadEvents(false);
+(0, _scrollTopJs.initScrollTop)();
 
-},{"./api.js":"4yEOZ","./ui.js":"62d9E"}],"4yEOZ":[function(require,module,exports,__globalThis) {
+},{"./api.js":"4yEOZ","./ui.js":"62d9E","./scrollTop.js":"kHRx6"}],"4yEOZ":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "fetchEvents", ()=>fetchEvents);
@@ -1057,6 +1059,28 @@ function esc(str = "") {
     return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-},{"./api.js":"4yEOZ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["93v64","lhpGb"], "lhpGb", "parcelRequire70a8", {})
+},{"./api.js":"4yEOZ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"kHRx6":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "initScrollTop", ()=>initScrollTop);
+function initScrollTop() {
+    const btn = document.getElementById("scrollTopBtn");
+    if (!btn) return;
+    const toggle = ()=>{
+        btn.classList.toggle("visible", window.scrollY > 400);
+    };
+    window.addEventListener("scroll", toggle, {
+        passive: true
+    });
+    btn.addEventListener("click", ()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+    toggle();
+}
 
-//# sourceMappingURL=event-booster.b828852a.js.map
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["93v64","lhpGb"], "lhpGb", "parcelRequire70a8", {})
+
+//# sourceMappingURL=EVENT-BOOSTER.b828852a.js.map
