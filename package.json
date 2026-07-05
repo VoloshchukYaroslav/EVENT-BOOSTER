@@ -1,11 +1,13 @@
 {
   "name": "event-booster",
   "version": "1.0.0",
-  "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
-  },
+"scripts": {
+  "start": "parcel src/index.html",
+  "build": "parcel build src/index.html --public-url /EVENT-BOOSTER/",
+  "deploy": "gh-pages -d dist"
+},
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.12.0"
   }
 }

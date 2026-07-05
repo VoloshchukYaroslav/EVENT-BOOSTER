@@ -1,84 +1,75 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Booster</title>
-    <link rel="stylesheet" href="/EVENT-BOOSTER.34df27b5.css">
-  </head>
-  <body>
-    <header class="header">
+<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Event Booster</title><link rel=stylesheet href=/EVENT-BOOSTER/EVENT-BOOSTER.cfc3a1fd.css><body>
+    <header class=header>
       <div class="container header__inner">
-        <div class="header__logo">
-          <img src="/logo.8bb9af93.svg" alt="Event Booster">
+        <div class=header__logo>
+          <img src=/EVENT-BOOSTER/logo.38fbe34f.svg alt="Event Booster">
         </div>
 
-        <h1 class="header__headline">Find best events<br>around the world</h1>
+        <h1 class=header__headline>Find best events<br>around the world</h1>
 
-        <div class="header__controls">
-          <div class="header__search">
-            <input id="searchInput" type="text" placeholder="Search events..." autocomplete="off">
-            <button id="searchBtn">Search</button>
+        <div class=header__controls>
+          <div class=header__search>
+            <input id=searchInput placeholder="Search events..." autocomplete=off>
+            <button id=searchBtn>Search</button>
           </div>
-          <div class="header__country">
-            <select id="countrySelect">
-              <option value="">All countries</option>
-              <option value="US">USA</option>
-              <option value="GB">UK</option>
-              <option value="DE">Germany</option>
-              <option value="FR">France</option>
-              <option value="SK">Slovakia</option>
-              <option value="UA">Ukraine</option>
+          <div class=header__country>
+            <select id=countrySelect>
+              <option value>All countries</option>
+              <option value=US>USA</option>
+              <option value=GB>UK</option>
+              <option value=DE>Germany</option>
+              <option value=FR>France</option>
+              <option value=SK>Slovakia</option>
+              <option value=UA>Ukraine</option>
             </select>
           </div>
         </div>
       </div>
     </header>
 
-    <main class="main">
-      <div class="container">
-        <div class="events-grid" id="eventsGrid"></div>
+    <main class=main>
+      <div class=container>
+        <div class=events-grid id=eventsGrid></div>
 
-        <div class="skeleton-grid" id="skeletonGrid">
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
-          <div class="skeleton-card"></div>
+        <div class=skeleton-grid id=skeletonGrid>
+          <div class=skeleton-card></div>
+          <div class=skeleton-card></div>
+          <div class=skeleton-card></div>
+          <div class=skeleton-card></div>
+          <div class=skeleton-card></div>
+          <div class=skeleton-card></div>
+          <div class=skeleton-card></div>
+          <div class=skeleton-card></div>
+          <div class=skeleton-card></div>
+          <div class=skeleton-card></div>
         </div>
 
-        <div class="empty-state hidden" id="emptyState">
+        <div class="empty-state hidden" id=emptyState>
           <p>No events found.</p>
         </div>
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="container">
+    <footer class=footer>
+      <div class=container>
         <p>Event Booster © 2026. Powered by Ticketmaster API.</p>
       </div>
     </footer>
 
-    <div class="modal-overlay hidden" id="modalOverlay">
-      <div class="modal" id="modal">
-        <img class="modal__avatar" id="modalAvatar" alt="">
-        <button class="modal__close" id="modalClose">×</button>
+    <div class="hidden modal-overlay" id=modalOverlay>
+      <div class=modal id=modal>
+        <img class=modal__avatar id=modalAvatar alt>
+        <button class=modal__close id=modalClose>×</button>
 
-        <div class="modal__content" id="modalContent"></div>
+        <div class=modal__content id=modalContent></div>
 
-        <div class="modal__more" id="modalMore"></div>
+        <div class=modal__more id=modalMore></div>
       </div>
     </div>
 
-    <script type="module" src="/EVENT-BOOSTER.b828852a.js"></script>
-    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
+    <script type=module src=/EVENT-BOOSTER/EVENT-BOOSTER.886529bb.js></script>
+    <button class=scroll-top id=scrollTopBtn aria-label="Scroll to top">
+      <svg width=20 height=20 fill=none viewBox="0 0 24 24"><path stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=2.5 d="M12 19V5m-7 7 7-7 7 7"/></svg>
     </button>
   
 
-</body></html>
